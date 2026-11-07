@@ -1,6 +1,4 @@
 import numpy as np
 
-heights = [150, 155, 220, 162, 165, 170, 185claude]
-print("Mean:", np.mean(heights))
-print("Median:", np.median(heights))
-print("Std deviation:", np.std(heights))
+flips = np.random.randint(0, 2, size=1000)  # 0 = tails, 1 = heads
+print("Chance of heads:", flips.mean())
