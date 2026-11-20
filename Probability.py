@@ -1,3 +1,5 @@
+from pyclbr import Class
+
 import numpy as np
 import statistics as Stats
 
@@ -43,3 +45,10 @@ print("median:", Stats.median(data))
 print("Mode:", Stats.mode(data))
 
 
+import statistics as Stats
+
+class_a = [68, 69, 70, 71, 72, 73, 74, 75, 76, 77]
+class_b = [10, 40, 70, 80, 90, 100, 110, 120, 130, 140]
+
+print("mean of Class A:", Stats.mean(class_a))
+print("mean of Class B:", Stats.mean(class_b))
