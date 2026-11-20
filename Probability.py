@@ -52,3 +52,19 @@ class_b = [10, 40, 70, 80, 90, 100, 110, 120, 130, 140]
 
 print("mean of Class A:", Stats.mean(class_a))
 print("mean of Class B:", Stats.mean(class_b))
+
+# Range Is nothing but the difference between the maximum and minimum values in a dataset.
+range_a = max(class_a) - min(class_a)
+range_b = max(class_b) - min(class_b)
+
+print("Range of Class A:", range_a)
+print("Range of Class B:", range_b)
+
+#min = 68
+#max = 77
+max_value = (max(class_a))
+min_value = (min(class_a))
+
+range_vlaue = max_value - min_value
+
+print(range_vlaue)
