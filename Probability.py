@@ -1,4 +1,5 @@
 import numpy as np
+import statistics as Stats
 
 flips = np.random.randint(0, 2, size=10)  # 0 = tails, 1 = heads
 print("Chance of heads:", flips.mean())
@@ -19,7 +20,6 @@ if rain_probability < 50:
 else:
     print("Rain is likely.")
 
-import numpy as np
 
 rng = np.random.default_rng(1)
 people = 1000
@@ -28,3 +28,10 @@ sick = rng.random(people) < 0.01  # 1% of people are sick
 test_positive = rng.random(people) < np.where(sick, 0.95, 0.05)  # test is right 95% of the time for sick people, wrong 5% for healthy people
 
 print("Chance a positive test means really sick:", sick[test_positive].mean())
+
+data = [5, 2, 7, 8, 5, 6, 9, 1, 4, 5, 3]
+print("Mean:", Stats.mean(data))
+print("median:", Stats.median(data))
+print("Mode:", Stats.mode(data))
+
+
