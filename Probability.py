@@ -29,6 +29,14 @@ test_positive = rng.random(people) < np.where(sick, 0.95, 0.05)  # test is right
 
 print("Chance a positive test means really sick:", sick[test_positive].mean())
 
+# Range
+# Percentile
+# Quartile
+# variance
+# Standard deviation
+# outliers
+# correlation
+
 data = [5, 2, 7, 8, 5, 6, 9, 1, 4, 5, 3]
 print("Mean:", Stats.mean(data))
 print("median:", Stats.median(data))
